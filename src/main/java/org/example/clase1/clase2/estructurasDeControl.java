@@ -21,7 +21,7 @@ public class estructurasDeControl {
 
         //En este caso, el swich y el if else son equivalentes
 
-        
+
         String diaDeLaSemana = "Domingo";
 
         switch (diaDeLaSemana){
