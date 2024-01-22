@@ -8,6 +8,6 @@ public class P1TiposDeDatos {
         double var4 = 13.250000000000000000000000000;
         char var5 = '8'; //es un chart, no un numero o un string
         boolean var6 = true;
-        
+
     }
 }
