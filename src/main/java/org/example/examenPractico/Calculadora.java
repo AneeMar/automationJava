@@ -4,15 +4,21 @@ public class Calculadora {
     private Integer num1;
     private Integer num2;
 
+//CONSTRUCTORES
 
-//    public Calculadora(Integer num1, Integer num2) {
-//        this.num1 = num1;
-//        this.num2 = num2;
-//    }
+
+/*  Para esta solucion sirve más el constructor vacío
+
+    public Calculadora(Integer num1, Integer num2) {
+       this.num1 = num1;
+        this.num2 = num2;
+  }*/
 
     public Calculadora (){
 
     }
+
+    //METODOS SETTER Y GETTER
 
     public Integer getNum1() {
         return num1;
@@ -30,13 +36,19 @@ public class Calculadora {
         this.num2 = num2;
     }
 
-    /*esta opcion seguro que anda
+
+    //METODOS DE OPERACIÓN
+
+
+    /*esta opcion seguro que anda, pero el método es publico y poco recomendable
 
     public Integer Suma (Integer num1, Integer num2){
         int Suma = num1 +  num2;
         return Suma;
     }
 */
+
+
     int Suma;
     private Integer Suma (Integer num1, Integer num2){
         return Suma;
@@ -46,8 +58,6 @@ public class Calculadora {
         Suma = num1 +  num2;
         return Suma;
     }
-
-
 
     int Resta;
     private Integer Resta (Integer num1, Integer num2){

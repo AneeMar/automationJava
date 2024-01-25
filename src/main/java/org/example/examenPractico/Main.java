@@ -7,8 +7,8 @@ public class Main {
 
         Calculadora calculadoraPrueba = new Calculadora();
 
-         Scanner numeros = new Scanner(System.in);
-         Scanner Operaciones = new Scanner(System.in);
+        Scanner numeros = new Scanner(System.in);
+        Scanner Operaciones = new Scanner(System.in);
 
 
     //cuerpo de la calculadora
@@ -28,11 +28,10 @@ public class Main {
 
     //Operaciones de la calculadora
 
-    System.out.println("Ingrese una operación: +, -, * o /");
+    System.out.println("Ingrese una operación. Para suma: +, Para resta: -, Para Multiplicación: * y Para División: /");
 
     String operaciones = Operaciones.nextLine();
 
-//HASTA ACA ESTA BIEN, ME LOS GUARDA
 
     switch (operaciones) {
         case "+":
@@ -51,5 +50,7 @@ public class Main {
         default:
         System.out.println("Operación invalida");
     }
+
+        //HASTA ACA ESTA BIEN, ME LOS GUARDA
     }
 }
