@@ -4,6 +4,8 @@ public class Calculadora {
     private Integer num1;
     private Integer num2;
 
+    private Integer Resultado;
+
 //CONSTRUCTORES
 
 
@@ -36,6 +38,13 @@ public class Calculadora {
         this.num2 = num2;
     }
 
+    public Integer getResultado() {
+        return Resultado;
+    }
+
+    public void setResultado(Integer resultado) {
+        Resultado = resultado;
+    }
 
     //METODOS DE OPERACIÓN
 
