@@ -1,4 +1,4 @@
-package org.example.clase1.clase1;
+package org.example.clase1;
 
 public class imprimirDatos {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.clase1.clase3;
+package org.example.clase3;
 
 public class Estudiante {
     //las clases que representan objetos no necesitan del método Main

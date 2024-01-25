@@ -1,4 +1,4 @@
-package org.example.clase1.clase2;
+package org.example.clase2;
 
 public class PODesclaracioneInicializacion {
     public static void main(String[] args) {

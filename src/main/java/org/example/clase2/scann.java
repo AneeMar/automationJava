@@ -1,4 +1,4 @@
-package org.example.clase1.clase2;
+package org.example.clase2;
 
 import java.util.Scanner;
 

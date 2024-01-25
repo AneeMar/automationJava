@@ -1,4 +1,4 @@
-package org.example.clase1.clase4;
+package org.example.clase4;
 
 /*Ingresar por consola un número mientras sea menor o igual a 500
 y almacenar el número en una lista. Al finalizar el ingreso mostrar

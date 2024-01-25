@@ -1,4 +1,4 @@
-package org.example.clase1.clase1;
+package org.example.clase1;
 
 public class concatenacion {
     public static void main(String[] args) {
