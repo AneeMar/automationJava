@@ -1,4 +1,4 @@
-package org.example.examenPractico;
+package org.example.examenPractico.problema1;
 
 public class Calculadora {
     private Integer num1;

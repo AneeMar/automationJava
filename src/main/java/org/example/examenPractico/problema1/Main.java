@@ -1,4 +1,6 @@
-package org.example.examenPractico;
+package org.example.examenPractico.problema1;
+
+import org.example.examenPractico.problema1.Calculadora;
 
 import java.util.Scanner;
 
