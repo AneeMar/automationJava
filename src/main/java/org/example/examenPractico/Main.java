@@ -68,12 +68,13 @@ public class Main {
             } else if (resultadoFinal > 10000) {
                 System.out.println("Error: resultado muy grande");
             } else {
-                System.out.println("No se pudo procesar resultado, intente nuevamente con una operación válida.");
+                   System.out.println("No se pudo procesar resultado, intente nuevamente con una operación válida.");
+
             }
 
 
             Contador++;
-            
+
         } while (Contador < 5);
 
 
