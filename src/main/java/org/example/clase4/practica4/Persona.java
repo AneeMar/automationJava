@@ -27,7 +27,12 @@ public class Persona {
         return apellidoPersona;
     }
 
-    public void setApellidoPersona(String apellidoPersona) {
+    public void setApellidoPersona(String apellidoPersona)
+    {
         this.apellidoPersona = apellidoPersona;
+    }
+
+    public void Saludar () {
+        System.out.println("Hola! cómo estan?");
     }
 }

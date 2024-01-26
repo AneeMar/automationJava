@@ -44,4 +44,11 @@ public class Alumno extends Persona {
     public void setMaterias(String materia) {
         this.materias.add(materia);
     }
+
+    //sobrescritura del metodo Saludar
+
+    @Override
+    public void Saludar(){
+        System.out.println("Que ondaaa");
+    }
 }
