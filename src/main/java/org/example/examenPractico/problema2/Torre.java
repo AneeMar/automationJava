@@ -28,11 +28,4 @@ public class Torre extends Personaje{
         System.out.println("Excelente entrenamiento! Usted ahora es nivel: " + getNivel());
     }
 
-    //instancia
-
-    public static void main(String[] args) {
-        Torre LT = new Torre(50,1);
-        LT.entrenar();
-    }
-
 }

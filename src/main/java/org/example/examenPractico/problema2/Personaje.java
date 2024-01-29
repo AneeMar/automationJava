@@ -1,6 +1,6 @@
 package org.example.examenPractico.problema2;
 
-public class Personaje {
+public abstract class Personaje {
 
     private Integer Salud;
 
@@ -10,9 +10,7 @@ public class Personaje {
     }
 
     //metodo entrenar
-    public void entrenar (){
-        System.out.println("estado: Entrenando...");
-    }
+    public abstract void entrenar ();
 
     //getter y setter
     public Integer getSalud() {

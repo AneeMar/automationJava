@@ -59,7 +59,6 @@ public class Main {
                     //System.out.println("el resultado de operacion invalida es: " + calculadoraPrueba.getResultado());
             }
 
-            //HASTA ACA ESTA BIEN, ME LOS GUARDA TENGO QUE RESOLVER QUE HACER CON EL ULTIMO CASO
 
             Integer resultadoFinal = calculadoraPrueba.getResultado();
 
@@ -70,8 +69,8 @@ public class Main {
             } else if (resultadoFinal > 10000) {
                 System.out.println("Error: resultado muy grande");
             } else {
-                   System.out.println("No se pudo procesar resultado, intente nuevamente con una operación válida.");
-
+                System.out.println("No se pudo procesar resultado, intente nuevamente con una operación válida.");
+                continue;
             }
 
 

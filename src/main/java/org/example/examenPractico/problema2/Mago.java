@@ -28,14 +28,6 @@ public class Mago extends Personaje{
     }
 
 
-    //Instanciar
-    public static void main(String[] args) {
-        Mago Merlin = new Mago(50, "Desaparecer");
-
-        Merlin.entrenar();
-
-    }
-
 
 
 }

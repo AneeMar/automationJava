@@ -26,12 +26,5 @@ public class Espadachin extends Personaje{
         System.out.println("Excelente entrenamiento! Usted ahora tiene: " + getAtaque() + " puntos de ataque.");
     }
 
-    //instancia
-    public static void main(String[] args) {
-        Espadachin Uno = new Espadachin(50,0);
-        Uno.entrenar();
-    }
-
-
 
 }
