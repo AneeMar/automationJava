@@ -1,6 +1,6 @@
 package org.example.Clase5.practicasDeClase.Figuras;
 
-public class Triangulo extends Figura {
+public class Triangulo extends Figura implements Dibujable{
 
     private Integer base;
     private Integer altura;
@@ -15,4 +15,8 @@ public class Triangulo extends Figura {
         return (base*altura)/2;
     }
 
+    @Override
+    public void dibujar() {
+        System.out.println("Dibujando un triangulo...");
+    }
 }

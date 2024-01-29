@@ -20,7 +20,7 @@ public class mainAbstract {
         listaDeFiguras.add(rectangulo);
 
         //Los dos metodos que siguen son lo mismo: for each
-        
+
         //listaDeFiguras.forEach(Figura -> System.out.println("Area: "+ Figura.calcularArea()));
 
         for (Figura figura : listaDeFiguras) {

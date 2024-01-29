@@ -1,6 +1,6 @@
 package org.example.Clase5.practicasDeClase.Figuras;
 
-public class Rectangulo extends Figura {
+public class Rectangulo extends Figura{
 
     private Integer base;
     private Integer altura;
