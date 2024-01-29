@@ -1,4 +1,17 @@
-package org.example.clase5.practicasDeClase.Figuras;
+package org.example.Clase5.practicasDeClase.Figuras;
 
-public class Cuadrado {
+import org.example.Clase5.practicasDeClase.Figuras.Figura;
+
+public class Cuadrado extends Figura {
+
+    private Integer lado;
+    public Cuadrado(String color, Integer lado) {
+        super(color);
+        this.lado = lado;
+    }
+
+    @Override
+    public Integer calcularArea() {
+        return lado*lado;
+    }
 }
