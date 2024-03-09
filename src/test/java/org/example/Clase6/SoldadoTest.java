@@ -2,9 +2,19 @@ package org.example.Clase6;
 
 import org.example.Clase7.Soldado;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class SoldadoTest {
+
+
+    // Estrategia para no instanciar cada vez
+     private Soldado sol;
+     @BeforeMethod //instanciamos antes de los test
+    public void Setup() {
+         sol = new Soldado(100);
+     }
+
 
     @Test
     public void saludDespuesDePelear(){
@@ -23,7 +33,7 @@ public class SoldadoTest {
         Soldado soldado2=new Soldado(50);
         soldado2.Pelear(150);
 
-        Assert.assertTrue(soldado2.estaMuerto(),"el soldado esta muerto");
+        Assert.assertTrue(soldado2.estaMuerto(),"el soldado esta vivo");
     }
 
     @Test
@@ -33,5 +43,14 @@ public class SoldadoTest {
         soldado3.Descanso();
 
         Assert.assertEquals(soldado3.getSalud(), 25, "el soldado no descansó nada");
+    }
+
+    @Test
+
+    public void elSoldadoEstaVivo(){
+         sol.Pelear(50);
+
+         Assert.assertEquals(sol.getSalud(),75);
+         Assert.assertFalse(sol.estaMuerto(),"el soldado esta muerto");
     }
 }
