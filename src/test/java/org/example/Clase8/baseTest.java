@@ -5,11 +5,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class SeleniumTest {
+public class baseTest {
 
     private WebDriver driver;
 
@@ -26,13 +25,9 @@ public class SeleniumTest {
         this.driver = new ChromeDriver(options);
     }
 
-
-    @Test
-    public void abrirPagina() {
-        this.driver.get("https://opencart.abstracta.us/");
-
+    public WebDriver getDriver() {
+        return driver;
     }
-
 
     @AfterMethod
     public void tearDown() {
