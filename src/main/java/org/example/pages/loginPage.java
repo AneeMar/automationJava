@@ -14,11 +14,11 @@ public class loginPage {
     public loginPage(WebDriver driver){
         this.driver = driver;
     }
-    public void llenarDatos(){
+    public void llenarDatos(String email, String pass){
         WebElement emailInputEl = driver.findElement(emailInput);
         WebElement pswdInputEl = driver.findElement(pswdInput);
-        emailInputEl.sendKeys("melbalorenzo@email.com");
-        pswdInputEl.sendKeys("melbaLorenzo");
+        emailInputEl.sendKeys(email);
+        pswdInputEl.sendKeys(pass);
     }
 
     public void clickLoginPageButton(){

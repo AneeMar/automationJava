@@ -1,6 +1,7 @@
 package org.example.Clase8;
 
 import org.example.pages.homePage;
+import org.example.pages.loginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -14,6 +15,7 @@ public class LoginTest  extends baseTest{
     public void validarLogin() {
 
         homePage HomePage = new homePage(getDriver());
+        loginPage LoginPage = new loginPage(getDriver());
 
         //paso1: validar página
         getDriver().get("https://opencart.abstracta.us/");
@@ -48,8 +50,8 @@ public class LoginTest  extends baseTest{
         WebElement loginButtonEl = getDriver().findElement(submitButton);
         loginButtonEl.click();*/
 
-        HomePage.llenarDatos();
-        HomePage.clickLoginPageButton();
+        LoginPage.llenarDatos("melbalorenzo@email.com", "mabelLornezo");
+        LoginPage.clickLoginPageButton();
 
         //validaciones
 
