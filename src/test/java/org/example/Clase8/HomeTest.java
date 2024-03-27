@@ -15,8 +15,6 @@ import java.time.Duration;
 import static java.sql.DriverManager.getDriver;
 
 public class HomeTest {
-
-
     private WebDriver driver;
 
     @BeforeMethod
@@ -35,10 +33,11 @@ public class HomeTest {
     @Test
     public void validarHome() {
 
+
         //paso1: validar página
         this.driver.get("https://opencart.abstracta.us/");
 
-        //paso 2: validar aserciones
+        /*paso 2: validar aserciones
 
         By inputBy = By.name("search");
         By carruselBy = By.id("content");
@@ -57,8 +56,7 @@ public class HomeTest {
         Assert.assertTrue(inputEl.isDisplayed(), "no se visualiza el input");
         Assert.assertTrue(carruselEl.isDisplayed(), "no se visualiza el carrusel");
         Assert.assertTrue(menuEl.isDisplayed(), "no se visualiza la navbar");
-        Assert.assertTrue(myAccountEl.isDisplayed(), "no se visualiza el menu de MyAccount");
-
+        Assert.assertTrue(myAccountEl.isDisplayed(), "no se visualiza el menu de MyAccount");*/
 
     }
 

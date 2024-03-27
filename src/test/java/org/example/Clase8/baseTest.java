@@ -20,6 +20,8 @@ public class baseTest {
 
         options.setPageLoadTimeout(Duration.ofSeconds(60));
 
+        // para que se lleve  acabo sin ejecutarse en front -> options.addArguments("headless");
+
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver.exe");
 
         this.driver = new ChromeDriver(options);
