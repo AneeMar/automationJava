@@ -1,18 +1,14 @@
 package org.example.Clase8;
 
-import org.openqa.selenium.By;
+import org.example.pages.homePage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
-
-import static java.sql.DriverManager.getDriver;
 
 public class HomeTest {
     private WebDriver driver;
@@ -33,6 +29,7 @@ public class HomeTest {
     @Test
     public void validarHome() {
 
+        homePage HomePage = new homePage(driver);
 
         //paso1: validar página
         this.driver.get("https://opencart.abstracta.us/");
@@ -58,6 +55,10 @@ public class HomeTest {
         Assert.assertTrue(menuEl.isDisplayed(), "no se visualiza la navbar");
         Assert.assertTrue(myAccountEl.isDisplayed(), "no se visualiza el menu de MyAccount");*/
 
+        Assert.assertTrue(HomePage.inputIsDisplayed());
+        Assert.assertTrue(HomePage.carouselIsDisplayed());
+        Assert.assertTrue(HomePage.menuIsDisplayed());
+        Assert.assertTrue(HomePage.myAccountIsDisplayed());
     }
 
     @AfterMethod
