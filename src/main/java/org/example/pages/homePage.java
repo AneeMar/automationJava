@@ -9,6 +9,7 @@ public class homePage {
     private By carruselBy = By.id("content");
     private By menuBy = By.id("menu");
     private By myAccountBy = By.xpath("//a[@title='My Account']");
+    private By LoginBy = By.xpath("//a[text()='Login']");
 
     private WebDriver driver;
 
@@ -35,5 +36,17 @@ public class homePage {
         return myAccountEl.isDisplayed();
     }
 
+    public void clickMyAccount(){
+
+        WebElement myAccountEl = driver.findElement(myAccountBy);
+        myAccountEl.click();
+
+    }
+
+    public void clickLoginButton(){
+        WebElement LoginEl = driver.findElement(LoginBy);
+        LoginEl.click();
+
+    }
 
 }

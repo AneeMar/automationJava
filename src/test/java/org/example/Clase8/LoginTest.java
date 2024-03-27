@@ -1,5 +1,6 @@
 package org.example.Clase8;
 
+import org.example.pages.homePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -12,10 +13,12 @@ public class LoginTest  extends baseTest{
 
     public void validarLogin() {
 
+        homePage HomePage = new homePage(getDriver());
+
         //paso1: validar página
         getDriver().get("https://opencart.abstracta.us/");
 
-        //click en My Account
+        /*click en My Account
         By myAccountBy = By.xpath("//a[@title='My Account']");
         WebElement myAccountEl = getDriver().findElement(myAccountBy);
         myAccountEl.click();
@@ -23,9 +26,12 @@ public class LoginTest  extends baseTest{
         //click en login
         By LoginBy = By.xpath("//a[text()='Login']");
         WebElement LoginEl = getDriver().findElement(LoginBy);
-        LoginEl.click();
+        LoginEl.click();*/
 
-        //Llenar con los datos
+        HomePage.clickMyAccount();
+        HomePage.clickLoginButton();
+
+        /*Llenar con los datos
 
         By emailInput = By.id("input-email");
         By pswdInput = By.id("input-password");
@@ -40,7 +46,10 @@ public class LoginTest  extends baseTest{
 
         By submitButton = By.xpath("//input[@value='Login']");
         WebElement loginButtonEl = getDriver().findElement(submitButton);
-        loginButtonEl.click();
+        loginButtonEl.click();*/
+
+        HomePage.llenarDatos();
+        HomePage.clickLoginPageButton();
 
         //validaciones
 
